@@ -1,6 +1,7 @@
 import { Payload } from './Payload';
 import { Cargo } from './Cargo';
 import { Astronaut } from './Astronaut';
+
 export class Rocket {
 	//properties and methods
 	name: string;
@@ -16,7 +17,7 @@ export class Rocket {
 		let itemsMass = 0;
 	
 		for (let i=0; i<items.length; i++){
-			itemsMass = itemsMass + items[0].massKg;
+			itemsMass = itemsMass + items[i].massKg;
 		}
 	
 		return itemsMass;
